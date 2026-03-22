@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralCaption AI - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #EC4899, #EAB308);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .logo p {
+            color: #9CA3AF;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card h2 .icon {
+            font-size: 1.8rem;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #EC4899, #EAB308);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.4);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .info-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .info-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-list .label {
+            color: #9CA3AF;
+        }
+        
+        .info-list .value {
+            font-weight: 600;
+        }
+        
+        .steps {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #EC4899, #EAB308);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            margin-bottom: 5px;
+        }
+        
+        .step-content p {
+            color: #9CA3AF;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(236, 72, 153, 0.2);
+            border: 1px solid #EC4899;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #EC4899;
+        }
+        
+        .warning {
+            background: rgba(234, 179, 8, 0.1);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        
+        .warning-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .warning p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #EAB308;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #6B7280;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #EC4899;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .logo h1 {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>🎬 ViralCaption AI</h1>
+            <p>AI Transcription for Shorts, Reels & TikTok</p>
+        </div>
+        
+        <div class="card">
+            <h2><span class="icon">📱</span> Download for Android</h2>
+            
+            <a href="app-release.apk" class="download-btn" download>
+                ⬇️ Download APK (v1.0.0)
+            </a>
+            
+            <ul class="info-list">
+                <li>
+                    <span class="label">Version</span>
+                    <span class="value">1.0.0</span>
+                </li>
+                <li>
+                    <span class="label">Size</span>
+                    <span class="value">~50 MB</span>
+                </li>
+                <li>
+                    <span class="label">Android</span>
+                    <span class="value">7.0+</span>
+                </li>
+                <li>
+                    <span class="label">Architecture</span>
+                    <span class="value">Universal (All CPUs)</span>
+                </li>
+                <li>
+                    <span class="label">Huawei Ready</span>
+                    <span class="value">✅ Yes</span>
+                </li>
+            </ul>
+            
+            <div class="warning">
+                <span class="warning-icon">⚠️</span>
+                <p>
+                    <strong>Installation required:</strong> You may need to enable "Install from Unknown Sources" 
+                    in Settings → Security when installing for the first time.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><span class="icon">🚀</span> Installation Steps</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Download the APK</h4>
+                        <p>Click the download button above. File will save to your Downloads folder.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Open Files App</h4>
+                        <p>Go to Downloads → Tap on <code>app-release.apk</code></p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Allow Installation</h4>
+                        <p>If prompted, enable "Install from Unknown Sources" in Settings → Security</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Install & Open</h4>
+                        <p>Tap Install → Wait → Tap Open to launch ViralCaption AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><span class="icon">✨</span> Features</h2>
+            
+            <ul class="info-list">
+                <li>
+                    <span class="label">🎯 Word-level captions</span>
+                    <span class="badge">Karaoke style</span>
+                </li>
+                <li>
+                    <span class="label">📶 Works offline</span>
+                    <span class="badge">No internet needed</span>
+                </li>
+                <li>
+                    <span class="label">🌐 Multi-format export</span>
+                    <span class="badge">SRT, ASS, JSON</span>
+                </li>
+                <li>
+                    <span class="label">📹 Vertical video</span>
+                    <span class="badge">9:16 optimized</span>
+                </li>
+                <li>
+                    <span class="label">🔒 Privacy first</span>
+                    <span class="badge">On-device AI</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2><span class="icon">📖</span> Need Help?</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">📄</div>
+                    <div class="step-content">
+                        <h4>Documentation</h4>
+                        <p>Read the full guide at <a href="#" style="color: #EC4899;">viralcaption.ai/docs</a></p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">💬</div>
+                    <div class="step-content">
+                        <h4>Support</h4>
+                        <p>Email us at <a href="mailto:support@viralcaption.ai" style="color: #EC4899;">support@viralcaption.ai</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                Made with ❤️ for content creators<br>
+                <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a> • <a href="#">GitHub</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-detect if APK exists, show message if not
+        fetch('app-release.apk')
+            .then(response => {
+                if (!response.ok) {
+                    document.querySelector('.download-btn').innerHTML = '❌ APK Not Available Yet';
+                    document.querySelector('.download-btn').style.background = '#374151';
+                    document.querySelector('.download-btn').style.pointerEvents = 'none';
+                    
+                    const warning = document.createElement('div');
+                    warning.className = 'warning';
+                    warning.innerHTML = `
+                        <span class="warning-icon">🔨</span>
+                        <p>
+                            <strong>Build the APK first!</strong><br>
+                            Run this on your computer:<br>
+                            <code style="background: rgba(0,0,0,0.3); padding: 5px 10px; border-radius: 4px; display: block; margin: 10px 0;">
+                                cd mobile_transcription && flutter build apk --release
+                            </code>
+                            Then copy the APK from:<br>
+                            <code style="background: rgba(0,0,0,0.3); padding: 5px 10px; border-radius: 4px; display: block; margin: 10px 0;">
+                                build/app/outputs/flutter-apk/app-release.apk
+                            </code>
+                            to this folder.
+                        </p>
+                    `;
+                    document.querySelector('.card').insertAdjacentElement('afterend', warning);
+                }
+            })
+            .catch(() => {
+                // File doesn't exist
+            });
+    </script>
+</body>
+</html>
