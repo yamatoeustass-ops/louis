@@ -1,6 +1,34 @@
 # 🚀 START HERE - One-Click Install for Huawei
 
-## Quick Start (3 Clicks!)
+## ⚡ NO FLUTTER? No Problem!
+
+**Don't have Flutter installed?** Use cloud building!
+
+### 🎯 Fastest Way (5 min setup + 10 min build):
+
+```
+Step 1: Run the GitHub setup script
+├─ Windows: Double-click SETUP_GITHUB.bat
+└─ Mac/Linux: Double-click SETUP_GITHUB.sh
+
+Step 2: Build on Codemagic (cloud)
+├─ Go to: codemagic.io
+├─ Sign in with GitHub
+├─ Add your "viral_caption" repo
+└─ Click "Start build" → Wait ~10 min
+
+Step 3: Download & Install
+├─ Download APK from Codemagic
+├─ Transfer to Huawei phone
+└─ Install → Done!
+```
+
+📖 **Quick guide:** `QUICK_GITHUB_SETUP.md`  
+📖 **Full guide:** `GITHUB_CODEMAGIC_SETUP.md`
+
+---
+
+## 🛠️ Have Flutter? Build Locally:
 
 ### Windows Users:
 1. **Double-click** `BUILD.bat`

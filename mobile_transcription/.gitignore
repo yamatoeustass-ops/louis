@@ -1,25 +1,4 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# VS Code
-.vscode/
-
-# Flutter/Dart
+# Flutter
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -72,7 +51,7 @@ android/app/src/main/jniLibs/**
 **/ios/Flutter/Debug.xcconfig
 **/ios/Flutter/Release.xcconfig
 
-# Huawei/AGC
+# Huawei/AGC - DON'T UPLOAD THESE!
 **/agconnect-services.json
 android/key.properties
 *.keystore
@@ -85,6 +64,14 @@ assets/whisper_models/*.ggml
 # Environment
 .env
 .env.*
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
 
 # Coverage
 coverage/
