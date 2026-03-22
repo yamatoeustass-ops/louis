@@ -1,11 +1,11 @@
-# 🎯 5-Minute Quick Start
-## For People Who Don't Like Reading Manuals
+# 🚀 5-Minute FREE Start
+## Zero Installation, Zero Cost, No Paywalls
 
 ---
 
-## Do These 5 Things:
+## Do These 6 Things:
 
-### 1️⃣ Create GitHub Account (1 min)
+### 1️⃣ Create GitHub Account (2 min)
 ```
 1. Go to: github.com/signup
 2. Enter email → Create password → Verify
@@ -14,67 +14,73 @@
 
 ---
 
-### 2️⃣ Run the Setup Script (2 min)
-
-**Windows:**
+### 2️⃣ Create Repository (1 min)
 ```
-1. Open mobile_transcription folder
-2. Double-click: SETUP_GITHUB.bat
-3. Follow the prompts
-4. When GitHub opens, create repo named: viral_caption
-5. Copy the URL → Paste back in the script
-6. Done! ✅
-```
-
-**Mac/Linux:**
-```
-1. Open mobile_transcription folder
-2. Double-click: SETUP_GITHUB.sh
-3. Follow the prompts
-4. When GitHub opens, create repo named: viral_caption
-5. Copy the URL → Paste back in the script
-6. Done! ✅
+1. Go to: github.com/new
+2. Name: viral_caption
+3. ✅ PUBLIC (important for free builds!)
+4. Click "Create repository"
 ```
 
 ---
 
-### 3️⃣ Build on Codemagic (1 min setup, then wait)
+### 3️⃣ Upload Files (3 min)
 ```
-1. Go to: codemagic.io
-2. Sign in with GitHub
-3. Add repository → Select "viral_caption"
-4. Click "Start build"
-5. Wait 10-15 minutes (go get coffee ☕)
-6. Done! ✅
-```
-
----
-
-### 4️⃣ Download APK (30 seconds)
-```
-1. In Codemagic, scroll to "Artifacts"
-2. Click download on: app-arm64-v8a-release.apk
-3. APK downloads to your computer
-4. Done! ✅
+1. Click "uploading an existing file"
+2. Drag ALL files from mobile_transcription folder
+3. Wait for upload
+4. Commit message: "Initial commit"
+5. Click "Commit changes"
 ```
 
 ---
 
-### 5️⃣ Install on Phone (2 min)
+### 4️⃣ Enable GitHub Actions (1 min)
 ```
-1. Connect phone to computer (USB cable)
-2. Copy APK to phone's Download folder
-3. On phone: Files → Downloads → Tap APK
-4. If prompted: Enable "Install unknown apps"
-5. Tap Install
-6. Done! ✅
+1. Click "Actions" tab
+2. Click "Enable workflow"
+3. Build starts automatically!
+4. Go get coffee ☕ (wait 20 min)
+```
+
+---
+
+### 5️⃣ Download APK (2 min)
+```
+1. When build completes (green ✅)
+2. Scroll to "Artifacts"
+3. Click "apk-files" to download
+4. Extract ZIP → Get APK
+```
+
+---
+
+### 6️⃣ Install on Phone (3 min)
+```
+1. Transfer APK to phone (USB/Drive/Email)
+2. Files → Downloads → Tap APK
+3. Enable "Install unknown apps" if needed
+4. Install → Done! ✅
 ```
 
 ---
 
 ## 🎉 You're Done!
 
-Open the app on your phone and start transcribing!
+**Total time:** ~30 minutes (mostly waiting)  
+**Cost:** $0  
+**Software installed:** Zero!
+
+---
+
+## For Updates:
+
+```
+1. Edit files on GitHub (click → edit → commit)
+2. OR upload new files
+3. GitHub Actions auto-rebuilds!
+4. Download new APK in 15 min
+```
 
 ---
 
@@ -82,26 +88,26 @@ Open the app on your phone and start transcribing!
 
 | Problem | Quick Fix |
 |---------|-----------|
-| Script won't run | Install Git: git-scm.com |
-| Can't push to GitHub | Create repo at github.com/new first |
-| Build fails | Check codemagic.yaml config |
-| APK won't install | Enable "Install unknown apps" in Settings |
+| Actions not enabled | Settings → Actions → Enable all |
+| Build failed | Click build → Read logs → Fix error |
+| Can't download | Wait for green checkmark first |
+| APK won't install | Enable "Install unknown apps" |
 
-**Full guide:** `COMPLETE_SETUP_GUIDE.md`
-
----
-
-## For Updates:
-
-```bash
-# Make changes → Save → Run these:
-git add .
-git commit -m "Your changes"
-git push
-
-# Codemagic auto-builds new APK!
-```
+**Full help:** TROUBLESHOOTING.md
 
 ---
 
-**That's it! No Flutter needed, no complex setup!** 🚀
+## Why This is Better:
+
+| Feature | GitHub Actions | Codemagic |
+|---------|---------------|-----------|
+| Free minutes | 3000/month | 500/month |
+| Credit card | ❌ Not needed | ✅ Required |
+| Cost | $0 | Freemium |
+| Artifact storage | 90 days | 30 days |
+
+**GitHub Actions wins! 🏆**
+
+---
+
+**100% Free • No Credit Card • No Installation** 🚀

@@ -5,11 +5,12 @@
 
 ## 🚀 Getting Started (Pick One)
 
-| Guide | Time | For Who |
-|-------|------|---------|
-| **[5_MINUTE_START.md](5_MINUTE_START.md)** | 5 min | Impatient people |
-| **[START_HERE.md](START_HERE.md)** | 2 min | Everyone (main entry) |
-| **[QUICK_GITHUB_SETUP.md](QUICK_GITHUB_SETUP.md)** | 5 min | Quick reference |
+| Guide | Time | Cost | For Who |
+|-------|------|------|---------|
+| **[FREE_NO_INSTALL_SOLUTION.md](FREE_NO_INSTALL_SOLUTION.md)** | 30 min | **FREE** | **EVERYONE - Best option!** |
+| **[NO_INSTALL_SOLUTION.md](NO_INSTALL_SOLUTION.md)** | 25 min | Freemium | Online build (Codemagic) |
+| **[5_MINUTE_START.md](5_MINUTE_START.md)** | 5 min | FREE | Impatient people |
+| **[START_HERE.md](START_HERE.md)** | 2 min | FREE | Everyone (main entry) |
 
 ---
 

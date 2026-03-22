@@ -8,21 +8,30 @@
 
 ## 🎯 Choose Your Path:
 
-### Path A: I Want the App NOW (5 minutes)
+### Path A: 100% FREE - Zero Installation ⭐⭐⭐
+```
+→ Read: FREE_NO_INSTALL_SOLUTION.md
+→ Completely FREE (no paywalls!)
+→ GitHub Actions (3000 free minutes)
+→ No credit card needed
+→ Takes ~30 minutes total
+```
+
+### Path B: I Want the App NOW (5 minutes)
 ```
 → Read: 5_MINUTE_START.md
 → Super quick, no fluff
 → Get APK fast
 ```
 
-### Path B: I Want Detailed Instructions (20 minutes)
+### Path C: I Want Detailed Instructions (20 minutes)
 ```
 → Read: COMPLETE_SETUP_GUIDE.md
 → Every single click explained
 → Can't go wrong
 ```
 
-### Path C: I Have Flutter (Build locally)
+### Path D: I Have Flutter (Build locally)
 ```
 → Windows: Double-click BUILD.bat
 → Mac/Linux: Double-click BUILD.sh
