@@ -4,27 +4,36 @@
 
 **Don't have Flutter installed?** Use cloud building!
 
-### 🎯 Fastest Way (5 min setup + 10 min build):
+---
 
+## 🎯 Choose Your Path:
+
+### Path A: I Want the App NOW (5 minutes)
 ```
-Step 1: Run the GitHub setup script
-├─ Windows: Double-click SETUP_GITHUB.bat
-└─ Mac/Linux: Double-click SETUP_GITHUB.sh
-
-Step 2: Build on Codemagic (cloud)
-├─ Go to: codemagic.io
-├─ Sign in with GitHub
-├─ Add your "viral_caption" repo
-└─ Click "Start build" → Wait ~10 min
-
-Step 3: Download & Install
-├─ Download APK from Codemagic
-├─ Transfer to Huawei phone
-└─ Install → Done!
+→ Read: 5_MINUTE_START.md
+→ Super quick, no fluff
+→ Get APK fast
 ```
 
-📖 **Quick guide:** `QUICK_GITHUB_SETUP.md`  
-📖 **Full guide:** `GITHUB_CODEMAGIC_SETUP.md`
+### Path B: I Want Detailed Instructions (20 minutes)
+```
+→ Read: COMPLETE_SETUP_GUIDE.md
+→ Every single click explained
+→ Can't go wrong
+```
+
+### Path C: I Have Flutter (Build locally)
+```
+→ Windows: Double-click BUILD.bat
+→ Mac/Linux: Double-click BUILD.sh
+→ See: INSTALL_GUIDE.md
+```
+
+---
+
+## 📚 All Documentation
+
+**Find what you need:** [DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)
 
 ---
 
