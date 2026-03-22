@@ -25,34 +25,29 @@ dependencies:
   # HMS Core (Huawei Mobile Services)
   # Uncomment for Huawei builds
   # huawei_account: ^6.11.0+301
-  # huabi_auth: ^6.1.0
+  # huawei_base: ^6.11.0+300
   
   # Local Storage
   shared_preferences: ^2.2.2
   path_provider: ^2.1.1
-  sqflite: ^2.3.0
   
   # UI Components
   cupertino_icons: ^1.0.6
-  google_fonts: ^6.1.0
-  flutter_animate: ^4.3.0
   
-  # JSON Serialization
-  json_annotation: ^4.8.1
+  # Sharing
+  share_plus: ^7.2.1
+  
+  # FFI for whisper.cpp (uncomment when integrating native library)
+  # ffi: ^2.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
-  build_runner: ^2.4.7
-  json_serializable: ^6.7.1
+  # ffigen: ^11.0.0  # For generating FFI bindings
 
 flutter:
   uses-material-design: true
   
   assets:
     - assets/whisper_models/
-    - assets/logo.png
-  
-  # whisper.cpp FFI bindings
-  # ffi: ^2.1.0
