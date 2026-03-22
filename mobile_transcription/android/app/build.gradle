@@ -1,0 +1,102 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.huawei.agconnect"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    namespace "com.viralcaption.viral_caption"
+    compileSdkVersion 34
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.viralcaption.viral_caption"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        
+        // Huawei HMS Core
+        manifestPlaceholders = [
+            HUAWEI_APP_ID: "YOUR_APP_ID_FROM_AGC"
+        ]
+        
+        // Enable multidex for HMS libraries
+        multiDexEnabled true
+        
+        // ABI filters for whisper.cpp native libs
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    
+    // Split APKs by ABI for smaller download size
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+            universalApk true
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"
+    
+    // Huawei HMS Core
+    implementation 'com.huawei.hms:hwid:6.12.0.300'
+    implementation 'com.huawei.hms:base:6.12.0.300'
+    
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+}

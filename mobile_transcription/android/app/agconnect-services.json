@@ -1,0 +1,42 @@
+{
+    "agcgw": {
+        "backurl": "connect-dre.hispace.hicloud.com",
+        "url": "connect-dre.dbankcloud.cn",
+        "websocketbackurl": "connect-ws-dre.hispace.hicloud.com",
+        "websocketurl": "connect-ws-dre.dbankcloud.cn"
+    },
+    "agcgw_all_size": "CN",
+    "client": {
+        "cp_id": "YOUR_CP_ID",
+        "product_id": "YOUR_PRODUCT_ID",
+        "client_id": "YOUR_CLIENT_ID",
+        "client_secret": "YOUR_CLIENT_SECRET",
+        "project_id": "YOUR_PROJECT_ID",
+        "app_id": "YOUR_APP_ID",
+        "package_name": "com.viralcaption.viral_caption"
+    },
+    "oauth_client": {
+        "client_id": "YOUR_OAUTH_CLIENT_ID",
+        "client_type": "ANDROID"
+    },
+    "app": {
+        "appid": "YOUR_APP_ID",
+        "apptype": "0",
+        "name": "ViralCaption AI",
+        "package_name": "com.viralcaption.viral_caption"
+    },
+    "service": {
+        "analytics": {
+            "collector_url": "datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn"
+        }
+    },
+    "configuration_version": "3.0",
+    "appInfos": [
+        {
+            "package_name": "com.viralcaption.viral_caption",
+            "client": {
+                "app_id": "YOUR_APP_ID"
+            }
+        }
+    ]
+}

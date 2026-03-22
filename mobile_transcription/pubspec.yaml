@@ -1,0 +1,58 @@
+name: viral_caption
+description: AI-powered transcription for Shorts, Reels & TikTok with word-level captions
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.5
+  
+  # HTTP & API
+  http: ^1.1.0
+  dio: ^5.3.3
+  
+  # File & Video Handling
+  file_picker: ^6.1.1
+  video_player: ^2.8.1
+  ffmpeg_kit_flutter: ^6.0.3
+  
+  # HMS Core (Huawei Mobile Services)
+  # Uncomment for Huawei builds
+  # huawei_account: ^6.11.0+301
+  # huabi_auth: ^6.1.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  sqflite: ^2.3.0
+  
+  # UI Components
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.3.0
+  
+  # JSON Serialization
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/whisper_models/
+    - assets/logo.png
+  
+  # whisper.cpp FFI bindings
+  # ffi: ^2.1.0
